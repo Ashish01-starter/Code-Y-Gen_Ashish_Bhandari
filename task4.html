@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NovaSound - Smart Audio</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* HEADER */
+    #header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      z-index: 1000;
+    }
+
+    #header-img {
+      width: 50px;
+    }
+
+    #nav-bar {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    .hero {
+      margin-top: 80px;
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #38bdf8, #6366f1);
+      color: white;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    /* FLEXBOX (required) */
+    .flex-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #f1f5f9;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+    /* VIDEO */
+    iframe {
+      width: 80%;
+      height: 400px;
+      margin-top: 20px;
+    }
+
+    /* FORM */
+    #form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    #email {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #submit {
+      padding: 10px 20px;
+      background: #0f172a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #submit:hover {
+      background: #38bdf8;
+    }
+
+    /* MEDIA QUERY (required) */
+    @media (max-width: 768px) {
+      .flex-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      iframe {
+        width: 100%;
+      }
+
+      #header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <img 
+      id="header-img" 
+      src="https://cdn-icons-png.flaticon.com/512/727/727269.png"
+      alt="logo"
+    >
+
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#demo">Demo</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>NovaSound</h1>
+    <p>Next-gen wireless audio experience</p>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="flex-container">
+      <div class="card">
+        <h3>Crystal Sound</h3>
+        <p>High-definition immersive audio output.</p>
+      </div>
+      <div class="card">
+        <h3>Wireless Freedom</h3>
+        <p>No wires. No limits. Pure mobility.</p>
+      </div>
+      <div class="card">
+        <h3>Long Battery</h3>
+        <p>Up to 20 hours of uninterrupted playback.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="demo">
+    <h2>Product Demo</h2>
+    <iframe 
+      id="video"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- FORM -->
+  <section id="contact">
+    <h2>Join the Waitlist</h2>
+    <form 
+      id="form"
+      action="https://www.freecodecamp.org/email-submit"
+    >
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      >
+
+      <input
+        id="submit"
+        type="submit"
+        value="Notify Me"
+      >
+    </form>
+  </section>
+
+</body>
+</html>

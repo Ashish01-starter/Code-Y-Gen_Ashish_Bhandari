@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Documentation</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+    }
+
+    /* NAVBAR */
+    #navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background: #0f172a;
+      color: white;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    #navbar header {
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    .nav-link:hover {
+      background: #38bdf8;
+    }
+
+    /* MAIN DOC */
+    #main-doc {
+      margin-left: 270px;
+      padding: 20px;
+    }
+
+    .main-section {
+      margin-bottom: 40px;
+    }
+
+    .main-section header {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    code {
+      display: block;
+      background: #f1f5f9;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    /* MEDIA QUERY */
+    @media (max-width: 768px) {
+      #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <header>Python Documentation</header>
+
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+    <a class="nav-link" href="#Control_Flow">Control Flow</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Modules_and_Imports">Modules and Imports</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Python is a high-level, interpreted programming language.</p>
+      <p>It is widely used for web development, data science, and automation.</p>
+
+      <code>print("Hello, World!")</code>
+
+      <ul>
+        <li>Easy to learn</li>
+        <li>Readable syntax</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables_and_Data_Types">
+      <header>Variables and Data Types</header>
+      <p>Variables store data values.</p>
+      <p>Python has multiple data types like int, float, and string.</p>
+
+      <code>x = 10</code>
+      <code>name = "Ashish"</code>
+
+      <ul>
+        <li>Integer</li>
+        <li>String</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Control_Flow">
+      <header>Control Flow</header>
+      <p>Control flow determines how code executes.</p>
+      <p>It includes if statements and loops.</p>
+
+      <code>
+if x > 5:
+    print("Greater")
+      </code>
+
+      <ul>
+        <li>if-else</li>
+        <li>loops</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are reusable blocks of code.</p>
+      <p>They help organize programs.</p>
+
+      <code>
+def greet():
+    print("Hello")
+      </code>
+
+      <ul>
+        <li>Reusable</li>
+        <li>Modular</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Modules_and_Imports">
+      <header>Modules and Imports</header>
+      <p>Modules allow code reuse across files.</p>
+      <p>You can import built-in or custom modules.</p>
+
+      <code>import math</code>
+      <code>math.sqrt(16)</code>
+
+      <ul>
+        <li>Built-in modules</li>
+        <li>Custom modules</li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>

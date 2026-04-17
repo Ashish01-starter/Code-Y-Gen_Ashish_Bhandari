@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartDesk - Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    #header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      z-index: 1000;
+    }
+
+    #header-img {
+      width: 120px;
+    }
+
+    #nav-bar {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      color: #00c3ff;
+    }
+
+    /* HERO */
+    .hero {
+      margin-top: 80px;
+      padding: 60px;
+      text-align: center;
+      background: linear-gradient(120deg, #00c3ff, #ffff1c);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 40px;
+    }
+
+    .features {
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+    }
+
+    .feature-box {
+      flex: 1;
+      padding: 20px;
+      background: #f4f4f4;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    /* VIDEO */
+    .video-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    iframe {
+      width: 80%;
+      height: 400px;
+    }
+
+    /* FORM */
+    #form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    #email {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #submit {
+      padding: 10px 20px;
+      background: #111;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #submit:hover {
+      background: #00c3ff;
+    }
+
+    /* MEDIA QUERY */
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+      }
+
+      iframe {
+        width: 100%;
+      }
+
+      #header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt="logo">
+
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#video-section">Demo</a>
+      <a class="nav-link" href="#subscribe">Subscribe</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>SmartDesk</h1>
+    <p>Upgrade your workspace with intelligence</p>
+  </div>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Ergonomic Design</h3>
+        <p>Comfortable and adjustable for long hours.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Smart Controls</h3>
+        <p>Control height with a single touch.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Energy Efficient</h3>
+        <p>Consumes less power with optimized motors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="video-section">
+    <h2>Watch Demo</h2>
+    <div class="video-container">
+      <iframe id="video"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section id="subscribe">
+    <h2>Stay Updated</h2>
+    <form id="form" action="https://www.freecodecamp.org/email-submit">
+      <input 
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      >
+      <input id="submit" type="submit" value="Get Started">
+    </form>
+  </section>
+
+</body>
+</html>
